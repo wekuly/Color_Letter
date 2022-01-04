@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery-ui-1.10.3.custom.min.js"></script> -->
+    <!-- <script src="bootstrap.min.css"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-theme.css"></script>
+    <script src="bootstrap-theme.min.css"></script> -->
+
+    <link href="colorletter.css" rel="stylesheet" type="text/css" />
+    <script src="colorletter.js"></script>
+
+    <title>colorletter</title>
+    <!-- 글자의 색깔을 제한시간안에 모두 입력하기-->
+    <style>
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<!-- 나중에 반응형으로 만들기 -->
+<!-- 깃 올리기 -->
+
+<body>
+    <!-- 첫화면 -->
+    <div id="first_view">
+        <video muted autoplay>
+            <source src="image/Letters - 6900.mp4" type="video/mp4">
+        </video>
+        <div class="start_view">
+            <h1>My Portfolio</h1>
+            <h2>글자색 읽기</h2>
+        </div>
+        <div class="start_view_btn btn_style">
+            <div class="start_btn">PLAY</div>
+            <div class="read_btn">-제작중-</div>
+        </div>
+    </div>
+
+    <!-- 게임화면 -->
+    <div class="game_mission">
+        <p>색깔을 입력하세요.</p>
+    </div>
+    <div id="game">
+        <div class="all-time">
+            <span class="time_m">0</span> :
+            <span class="time_s">0</span>
+        </div>
+        남은 횟수 : <span class="remain">00</span>
+        <div id="gameview">
+            <p class="L_Red">빨강</p>
+            <p class="L_Yellow">노랑</p>
+            <p class="L_Green">초록</p>
+            <p class="L_Blue">파랑</p>
+            <h2>준비</h2>
+        </div>
+
+    </div>
+    <!-- 입력창 -->
+    <input id="answer" type="text" value="">
+    <!-- 버튼 -->
+    <div class="start_and_load">
+        <button type="button" class="LSbtn"></button>
+    </div>
+    <!-- 타이머 -->
+    <div class="score_box">
+        <div>
+            남은 시간 : <span class="time">0</span>
+        </div>
+        <div>
+            정답 횟수 : <span class="score">0</span>
+        </div>
+    </div>
+    <div class="another_way">
+
+    </div>
+
+
+    <!-- 끝나는 화면 -->
+    <div class="finnaly_view">
+        <div class="fin_score">
+            <h1>★CLEAR★</h1>
+            <p>걸린 시간 : </p>
+            <p>정답 횟수 : </p>
+            <p>정답률(%) : </p>
+        </div>
+        <div class="fin_btn">
+            <div class="replay">
+                다시하기
+            </div>
+            <div class="exit">
+                끝내기
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
